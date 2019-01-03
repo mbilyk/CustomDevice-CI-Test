@@ -1,0 +1,11 @@
+[archive]
+build_output_dir = 'Built'
+archive_location = 'C:\\Users\\mbilyk\\Documents\\CustomDevice-CI-Test'
+
+[projects.cd]
+path = 'Source\MyCustomDevice.lvproj'
+
+[[build.steps]]
+name = 'Build My Custom Device'
+type = 'lvBuildAll'
+project = '{cd}'
