@@ -5,4 +5,4 @@
 def lvVersions = ['2018']
 def nodeLabel = 'veristand'
 
-ni.vsbuild.PipelineExecutor.execute(this, nodeLabel, lvVersions, dependencies)
+ni.vsbuild.PipelineExecutor.execute(this, nodeLabel, lvVersions)
