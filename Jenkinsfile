@@ -5,5 +5,4 @@
 def lvVersions = ['2018']
 def nodeLabel = 'veristand'
 
-ni.vsbuild.PipelineExecutor.execute(this, 'veristand', lvVersions, dependencies)
-diffPipeline('2018')
+ni.vsbuild.PipelineExecutor.execute(this, nodeLabel, lvVersions, dependencies)
