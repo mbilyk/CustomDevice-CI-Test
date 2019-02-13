@@ -10,7 +10,7 @@
 				<String>CD_CI_Test</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.2</String>
+				<String>1.0.0.4</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -131,6 +131,36 @@
 							<Section Name="Waveform Tasks" TypeGUID="1D6B8779-A957-42D1-B074-82153DB7FF44">
 								<Description />
 								<Properties />
+								<Errors />
+							</Section>
+							<Section Name="DigitalSim_Read" TypeGUID="77550632-1485-13A6-562E22989AF1271F">
+								<Description />
+								<Properties>
+									<Property Name="HWTSP AI">
+										<Boolean>true</Boolean>
+									</Property>
+									<Property Name="Port Width">
+										<U16>8</U16>
+									</Property>
+									<Property Name="HWTSP AO">
+										<Boolean>true</Boolean>
+									</Property>
+									<Property Name="Product ID">
+										<U64>29474</U64>
+									</Property>
+									<Property Name="Product Name">
+										<String>PXIe-6124</String>
+									</Property>
+									<Property Name="Product Category">
+										<I32>14644</I32>
+									</Property>
+									<Property Name="Input Configuration">
+										<I32>-1</I32>
+									</Property>
+									<Property Name="PXIBackplaneReferenceClock">
+										<I32>0</I32>
+									</Property>
+								</Properties>
 								<Errors />
 							</Section>
 						</Section>
