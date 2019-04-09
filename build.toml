@@ -5,3 +5,8 @@ path = 'Source\CD_CI_Test Custom Device.lvproj'
 name = 'Build My Custom Device'
 type = 'lvBuildAll'
 project = '{cd}'
+
+[[test.steps]]
+name = 'Functional_Test'
+type = 'lvVITester'
+Test_path='\Source\Tests\Unit\MyTestCase.lvclass'
