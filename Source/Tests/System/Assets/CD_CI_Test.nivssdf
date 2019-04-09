@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="System definition.xsd">
 	<MD5Checksum />
-	<Version Major="2017" Minor="0" Fix="1" Build="0" />
+	<Version Major="2017" Minor="0" Fix="0" Build="0" />
 	<Content>Definition</Content>
 	<Root Name="CD_CI_Test" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00">
 		<Description />
@@ -10,13 +10,13 @@
 				<String>CD_CI_Test</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.4</String>
+				<String>1.0.0.1</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
 			</Property>
 			<Property Name="Creation Date">
-				<Double>3631814468.1830182</Double>
+				<Double>3637671080.2456493</Double>
 			</Property>
 		</Properties>
 		<Errors />
@@ -24,14 +24,14 @@
 			<Description />
 			<Properties />
 			<Errors />
-			<Target Name="Local" TypeGUID="775504BB-1485-13A6-56755DBF2C326980">
+			<Target Name="Controller" TypeGUID="775504BB-1485-13A6-56755DBF2C326980">
 				<Description />
 				<Properties>
 					<Property Name="OS">
 						<String>Windows</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>localhost</String>
+						<String />
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -99,12 +99,6 @@
 					<Property Name="FPGAScanInterfaceMode">
 						<U16>0</U16>
 					</Property>
-					<Property Name="Timing Source Settings">
-						<U16>0</U16>
-					</Property>
-					<Property Name="Username">
-						<String />
-					</Property>
 				</Properties>
 				<Errors />
 				<Section Name="Hardware" TypeGUID="775504AB-1485-13A6-560018C1F4E3EEE1">
@@ -131,36 +125,6 @@
 							<Section Name="Waveform Tasks" TypeGUID="1D6B8779-A957-42D1-B074-82153DB7FF44">
 								<Description />
 								<Properties />
-								<Errors />
-							</Section>
-							<Section Name="DigitalSim_Read" TypeGUID="77550632-1485-13A6-562E22989AF1271F">
-								<Description />
-								<Properties>
-									<Property Name="HWTSP AI">
-										<Boolean>true</Boolean>
-									</Property>
-									<Property Name="Port Width">
-										<U16>8</U16>
-									</Property>
-									<Property Name="HWTSP AO">
-										<Boolean>true</Boolean>
-									</Property>
-									<Property Name="Product ID">
-										<U64>29474</U64>
-									</Property>
-									<Property Name="Product Name">
-										<String>PXIe-6124</String>
-									</Property>
-									<Property Name="Product Category">
-										<I32>14644</I32>
-									</Property>
-									<Property Name="Input Configuration">
-										<I32>-1</I32>
-									</Property>
-									<Property Name="PXIBackplaneReferenceClock">
-										<I32>0</I32>
-									</Property>
-								</Properties>
 								<Errors />
 							</Section>
 						</Section>
@@ -229,7 +193,7 @@
 								<U32>0</U32>
 							</Property>
 							<Property Name="Driver VI Path_0">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\CD_CI_Test\Linux_x64\CD_CI_Test Engine Linux64.llb\RT Driver VI.vi">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\CD_CI_Test\Windows\CD_CI_Test Engine Windows.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\CD_CI_Test\CD_CI_Test Engine Linux64.llb\RT Driver VI.vi</RTDestination>
@@ -238,7 +202,7 @@
 								</DependentFile>
 							</Property>
 							<Property Name="Driver VI Path_1">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\CD_CI_Test\Linux_32_ARM\CD_CI_Test Engine LinuxARM.llb\RT Driver VI.vi">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\CD_CI_Test\Windows\CD_CI_Test Engine Windows.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\CD_CI_Test\CD_CI_Test Engine LinuxARM.llb\RT Driver VI.vi</RTDestination>
@@ -247,7 +211,7 @@
 								</DependentFile>
 							</Property>
 							<Property Name="Driver VI Path_2">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\CD_CI_Test\VxWorks\CD_CI_Test Engine VxWorks.llb\RT Driver VI.vi">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\CD_CI_Test\Windows\CD_CI_Test Engine Windows.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\CD_CI_Test\CD_CI_Test Engine VxWorks.llb\RT Driver VI.vi</RTDestination>
@@ -256,7 +220,7 @@
 								</DependentFile>
 							</Property>
 							<Property Name="Driver VI Path_3">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\CD_CI_Test\PharLap\CD_CI_Test Engine Pharlap.llb\RT Driver VI.vi">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\CD_CI_Test\Windows\CD_CI_Test Engine Windows.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\CD_CI_Test\CD_CI_Test Engine Pharlap.llb\RT Driver VI.vi</RTDestination>
@@ -763,16 +727,16 @@
 							<Elem>0</Elem>
 						</DefaultValue>
 					</Channel>
-					<Channel Name="ASAM XIL EESPort Trigger" TypeGUID="03D3B762-1485-13A6-56F0D6D728909E23" RowDim="1" ColDim="1" Units="" BitFields="3">
-						<Description>Trigger the next EES Error Set from the EES Error Configuration.</Description>
+					<Channel Name="System Reserved 41" TypeGUID="03D3B762-1485-13A6-56F0D6D728909E23" RowDim="1" ColDim="1" Units="" BitFields="0">
+						<Description>Deprecated</Description>
 						<Properties />
 						<Errors />
 						<DefaultValue>
 							<Elem>0</Elem>
 						</DefaultValue>
 					</Channel>
-					<Channel Name="ASAM XIL EESPort Trigger Count" TypeGUID="03D3B762-1485-13A6-56F0D6D728909E23" RowDim="1" ColDim="1" Units="" BitFields="3">
-						<Description>Count the number of EESPort Triggers.</Description>
+					<Channel Name="System Reserved 42" TypeGUID="03D3B762-1485-13A6-56F0D6D728909E23" RowDim="1" ColDim="1" Units="" BitFields="0">
+						<Description>Deprecated</Description>
 						<Properties />
 						<Errors />
 						<DefaultValue>
