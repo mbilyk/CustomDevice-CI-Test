@@ -10,3 +10,8 @@ project = '{cd}'
 name = 'Functional_Test'
 type = 'lvVITester'
 Test_path='\Source\Tests\Unit\MyTestCase.lvclass'
+
+[[test.steps]]
+name = 'System_Test'
+type = 'lvVITester'
+Test_path='\Source\Tests\Unit\SystemTestCase.lvclass'
