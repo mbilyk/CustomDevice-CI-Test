@@ -14,4 +14,4 @@ test_path='\Source\Tests\Unit\MyTestCase.lvclass'
 [[test.steps]]
 name = 'System_Test'
 type = 'lvVITester'
-test_path='\Source\Tests\Unit\SystemTestCase.lvclass'
+test_path='\Source\Tests\System\SystemTestCase.lvclass'
