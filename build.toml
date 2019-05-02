@@ -1,3 +1,7 @@
+[archive]
+build_output_dir = 'Built'
+archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\custom devices\CD_CI_Test'
+
 [projects.cd]
 path = 'Source\CD_CI_Test Custom Device.lvproj'
 
@@ -15,3 +19,8 @@ test_path='\Source\Tests\Unit\MyTestCase.lvclass'
 name = 'System_Test'
 type = 'lvVITester'
 test_path='\Source\Tests\System\SystemTestCase.lvclass'
+
+[package]
+type = 'nipkg'
+payload_dir = 'Built'
+install_destination = 'documents\\National Instruments\\NI VeriStand {veristand_version}\\Custom Devices\\'
