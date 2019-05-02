@@ -31,9 +31,6 @@
 				</Item>
 				<Item Name="SystemTestCase.lvclass" Type="LVClass" URL="../Tests/System/SystemTestCase.lvclass"/>
 			</Item>
-			<Item Name="Unit" Type="Folder">
-				<Item Name="MyTestCase.lvclass" Type="LVClass" URL="../Tests/Unit/MyTestCase.lvclass"/>
-			</Item>
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
